@@ -1,21 +1,22 @@
-(function () {
-    var container = document.getElementById('my-player');
+(function() {
+    var container = document.getElementById("my-player");
     var VUDRM_TOKEN = "<your-vudrm-token>";
 
     var playerConfig = {
-        key: '<your-bitmovin-player-key>',
+        key: "<your-bitmovin-player-key>",
         logs: {
-            level: bitmovin.player.LogLevel.DEBUG
-        }
+            level: bitmovin.player.LogLevel.DEBUG,
+        },
     };
     var source = {
         title: "Getting Started with the Bitmovin Player",
-        description: "Now you are ready to embed the Bitmovin Player into your own website :)",
-        dash: '<your-stream-url>',
-        hls: '<your-stream-url>',
-        poster: 'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg',
+        description:
+            "Now you are ready to embed the Bitmovin Player into your own website :)",
+        dash: "<your-stream-url>",
+        hls: "<your-stream-url>",
+        poster:
+            "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg",
     };
-
 
     // MPEG-dash with PlayReady example
 
@@ -75,11 +76,14 @@
 
     var player = new bitmovin.player.Player(container, playerConfig);
     player.load(source).then(
-        function (player) {
-            console.log('Successfully created Bitmovin Player instance');
+        function(player) {
+            console.log("Successfully created Bitmovin Player instance");
         },
-        function (reason) {
+        function(reason) {
             console.log(reason);
-        }
+        },
     );
+    const blah = () => {
+        console.log("hello");
+    };
 })();
