@@ -83,7 +83,4 @@
             console.log(reason);
         },
     );
-    const blah = () => {
-        console.log("hello");
-    };
 })();
