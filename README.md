@@ -5,10 +5,10 @@
 
 ## Description
 
-This repo will demonstrate how to use [VuDRM](https://vudrm.vualto.com/) with [Bitmovin](https://bitmovin.com).
+This repository will demonstrate how to use [VuDRM](https://vudrm.vualto.com/) with [Bitmovin](https://bitmovin.com).
 If you have any questions please contact support@vualto.com
 
-This repo is currently targeting Bitmovin [version 8.2.2](https://bitmovin.com/docs/player/releases/web/web-8-2-2).
+This repository is currently targeting Bitmovin [version 8.2.2](https://bitmovin.com/docs/player/releases/web/web-8-2-2).
 
 ## Instructions
 
@@ -24,7 +24,7 @@ This repo is currently targeting Bitmovin [version 8.2.2](https://bitmovin.com/d
 
 1. Open the repository in your favourite javascript editor.
 2. In file `src/vuplay-bitmovin.js` replace `<your-bitmovin-player-key>` with your Bitmovin player key.
-3. In file `src/vuplay-bitmovin.js` replace `<your-stream-url>` with your stream url. This can be a [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) or [HLS](https://developer.apple.com/streaming/) stream.
+3. In file `src/vuplay-bitmovin.js` replace `<your-stream-url>` with your stream URL. This can be a [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) or [HLS](https://developer.apple.com/streaming/) stream.
 4. In file `src/vuplay-bitmovin.js` replace `<your-vudrm-token>` with a vudrm token from [https://admin.drm.technology](https://admin.drm.technology)
 5. Uncomment the appropriate code in the file `src/vuplay-bitmovin.js`. The code you uncomment will depend on the stream technology you want to use.
 6. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. N.B. You will need to add the host `bitmovin.local.vuplay.co.uk` to your local machine's hosts file in order for this to work. This domain will need to be white listed within your Bitmovin dashboard.
