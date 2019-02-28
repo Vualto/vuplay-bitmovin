@@ -4,7 +4,7 @@
     var dashStreamURL = "<your-stream-url>";
     // Set your HLS URL here.
     var hlsStreamURL = "<your-stream-url>";
-    // Please login to https://admin.drm.technology to generate a vudrm token.
+    // Please login to https://admin.drm.technology to generate a VuDRM token.
     var vudrmToken = "<your-vudrm-token>";
 
     var playerConfig = {
