@@ -1,34 +1,59 @@
 {
-  "name": "vuplay-bitmovin",
-  "version": "0.1.0",
-  "description": "Simple example of setting up an instance of Bitmovin player",
-  "main": "vuplay-bitmovin.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vualto/vuplay-bitmovin.git"
-  },
-  "keywords": [
-    "vuplay",
-    "bitmovin",
-    "vualto"
-  ],
-  "author": "Lorenzo Koundouris <lorenzo.koundouris@vualto.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Vualto/vuplay-bitmovin/issues"
-  },
-  "homepage": "https://github.com/Vualto/vuplay-bitmovin#readme",
-  "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-concurrent": "^2.3.1",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^2.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "^2.0.0",
-    "grunt-contrib-uglify": "^4.0.0",
-    "grunt-contrib-watch": "^1.1.0"
-  }
+    "name": "vuplay-bitmovin",
+    "version": "1.0.0",
+    "description": "A basic implementation of the Bitmovin player with the option to integrate VUDRM",
+    "main": "vuplay-bitmovin.js",
+    "scripts": {
+        "build": "grunt build && grunt serve",
+        "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\"",
+        "format:check": "prettier --list-different \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vualto/vuplay-bitmovin.git"
+    },
+    "keywords": [
+        "vualto",
+        "vuplay",
+        "vudrm",
+        "bitmovin",
+        "mpeg-dash",
+        "dash",
+        "hls",
+        "fairplay",
+        "widevine",
+        "playready"
+    ],
+    "contributors": [
+        {
+            "name": "Mark Niland",
+            "email": "mark.niland@vualto.com",
+            "url": "https://github.com/maniland"
+        },
+        {
+            "name": "Lorenzo Koundouris",
+            "email": "lorenzo.koundouris@vualto.com",
+            "url": "https://github.com/lorenzo-vualto"
+        },
+        {
+            "name": "Stefano Nepa",
+            "email": "stefano.nepa@vualto.com",
+            "url": "https://github.com/stefanovualto"
+        }
+    ],
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Vualto/vuplay-bitmovin/issues"
+    },
+    "homepage": "https://github.com/Vualto/vuplay-bitmovin#readme",
+    "devDependencies": {
+        "grunt": "^1.0.3",
+        "grunt-concurrent": "^2.3.1",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-connect": "^2.0.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "prettier": "^1.16.4"
+    }
 }
