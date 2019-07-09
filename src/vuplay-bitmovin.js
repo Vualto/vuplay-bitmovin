@@ -25,7 +25,7 @@
     // MPEG-dash with PlayReady example
     // source.drm = {
     //     playready: {
-    //         LA_URL: "https://playready-license.drm.technology/rightsmanager.asmx?token=" + encodeURIComponent(vudrmToken);
+    //         LA_URL: "https://playready-license.drm.technology/rightsmanager.asmx?token=" + encodeURIComponent(vudrmToken)
     //     }
     // }
 
